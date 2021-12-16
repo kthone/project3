@@ -65,8 +65,8 @@ int main(){
     }
     
     //join thread and free memory
-	for (thread = 0; thread < NUM_THREADS; thread ++){
-		pthread_join(threads[thread], NULL);
+    for (thread = 0; thread < NUM_THREADS; thread ++){
+        pthread_join(threads[thread], NULL);
         free(args[thread]);
     }
 
